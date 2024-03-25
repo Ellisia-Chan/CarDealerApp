@@ -8,7 +8,7 @@ Task: <br />
 ❌ More Options <br />
 
 
-![image](https://github.com/ChristianJude23/CarDealerApp/assets/152279955/edb8012e-e42d-4896-adc6-de08d577d0cc)
+![image](https://github.com/ChristianJude23/CarDealerApp/assets/152279955/2fa05f0d-e9ac-452b-8052-0f2a169fdade)
 
 
 Color Palette <br />
