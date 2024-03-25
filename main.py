@@ -89,9 +89,9 @@ class Window:
         self.receipt_car_price.place(x=300, y=80) 
 
         #Load Image
-        bmw_image = Image.open("Main/img/BMW.gif").resize((180, 100))
-        subaru_image = Image.open("Main/img/Subaru.gif")
-        chevrolet_image = Image.open("Main/img/Chevrolet.gif")
+        bmw_image = Image.open("img/BMW.gif").resize((180, 100))
+        subaru_image = Image.open("img/Subaru.gif")
+        chevrolet_image = Image.open("img/Chevrolet.gif")
 
         #Convert Img to PhotoImage
         self.img_bmw = ImageTk.PhotoImage(bmw_image)
