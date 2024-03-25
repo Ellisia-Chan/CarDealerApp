@@ -1,5 +1,5 @@
 import tkinter as tk
-# from tkinter import PhotoImage
+from PIL import Image, ImageTk
 
 class Window:
     def __init__(self):
@@ -9,11 +9,6 @@ class Window:
         self.win.geometry("1200x600")
         self.win.resizable(False, False)
         self.win.config(bg="#008DDA")
-
-        #Const
-        # self.img_1 = PhotoImage(file="img/BMW.gif")
-        # self.img_2 = PhotoImage(file="img/Subaru.gif")
-        # self.img_3 = PhotoImage(file="img/Chevrolet.gif")
 
         #Call Methods
         self.frame()
@@ -81,6 +76,29 @@ class Window:
         #Button pos
         self.btn_enter.place(x=10, y=500)
         self.btn_clear.place(x=10, y=500)
+
+        #Frame2
+        #Label
+        self.receipt_title = tk.Label(self.frame2, text="Receipt", font=("Arial", 21, "underline"), bg="#ACE2E1")
+        self.receipt_car_img = tk.Label(self.frame2, text="")
+        self.receipt_car_price = tk.Label(self.frame2, text="$5,000.00", font=("Arial", 16), bg="#ACE2E1")
+
+        #Label pos
+        self.receipt_title.place(x=230, y=10)
+        self.receipt_car_img.place(x=30, y=60)
+        self.receipt_car_price.place(x=300, y=80) 
+
+        #Load Image
+        bmw_image = Image.open("Main/img/BMW.gif").resize((180, 100))
+        subaru_image = Image.open("Main/img/Subaru.gif")
+        chevrolet_image = Image.open("Main/img/Chevrolet.gif")
+
+        #Convert Img to PhotoImage
+        self.img_bmw = ImageTk.PhotoImage(bmw_image)
+        self.img_subaru = ImageTk.PhotoImage(subaru_image)
+        self.img_chevrolet = ImageTk.PhotoImage(chevrolet_image)
+
+        self.receipt_car_img.config(image=self.img_bmw, compound=tk.LEFT)
 
 window = Window()
 window.win.mainloop()
