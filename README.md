@@ -2,9 +2,9 @@
 
 Task: <br />
 ✅ Window <br />
+✅ Image <br />
 ❌ Functions <br />
 ❌ Reciept Process <br />
-❌ Image <br />
 ❌ More Options <br />
 
 
